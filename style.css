@@ -1,0 +1,122 @@
+/*Fonts*/
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    background-image: url(images/fondo-index.webp);
+    background-size: 72px 72px;
+    background-repeat: repeat;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    margin: 60px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 200px 500px;
+    grid-template-rows: 100px 500px;
+    gap: 3px;
+    grid-template-areas: 
+        "heading heading"
+        "navigationContainer mainContent";
+}
+
+.heading {
+    grid-area: heading;
+    border: 2px solid red;
+}
+
+/*Nav*/
+.navigationContainer {
+    grid-area: navigationContainer;
+    border: 2px solid #1F611B;
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+    background-color: #49EB74;
+}
+.nav{
+    margin: 10px;
+}
+.navCategories{
+    border: 1px solid #1F611B;
+    background-color: #3DD969;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+}
+.navCategories hr{
+    border: none;
+    border-bottom: 1px solid #1F611B;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.navSeparador{
+    height: 50px;
+    width: 175px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+    border-bottom: 1px solid #1F611B;
+    background-image: linear-gradient(to bottom, #AFECC1,#3DD969,#49EB74);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 5px;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 1.85px;
+    font-family: Poppins, sans-serif;
+    font-size: 10px;
+}
+
+.nav-icons{
+    width: 18.8px;
+    margin: 0 5px 0 3px;
+}
+.navLinks{
+    color: #e5e5f5;
+    text-shadow: #2a2969 2px 2px 4px;
+    text-decoration: none;
+}
+
+/*Contenido de al medio*/
+.mainContent {
+    grid-area: mainContent;
+    border: 2px solid green;
+}
+
+/*Perfil*/
+.rightSideContent{
+    display: grid;
+    margin-left: 10px;
+    width: 300px;
+    height: 300px;
+    justify-items: center;
+    position: relative;
+    gap: 30px;
+}
+
+.rightSideContent img{
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+}
+.rightSideContent h1{
+    font-size: 20px;
+    color: #18f100;
+    text-shadow: 0 0 5px #000, 0 0 10px #000;
+}
+
